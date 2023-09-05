@@ -3,6 +3,7 @@
 <head>
     <title>起始页</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口 -->
     <style>
         * {
             box-sizing: border-box;
@@ -13,6 +14,7 @@
             background-image: url('https://cn.bing.com/th?id=OHR.IronwoodCactus_ZH-CN9290037977_UHD.jpg&rf=LaDigue_1920x1080.jpg&pid=hp');
             background-repeat: no-repeat;
             background-size: cover;
+            /* background-color: aqua; */
         }
 
         #timeBox {
@@ -72,7 +74,7 @@
             flex: 1;
             outline: 0;
             border: none;
-            padding: 0 20px;
+            padding: 0 60px;
             color: inherit;
             background-color: transparent;
             font-size: 14px;
@@ -110,6 +112,30 @@
             display: block;
             text-align: center;
             line-height: 43px;
+        }
+        /* 移动端样式 */
+        @media (max-width: 768px) {
+            #timeBox {
+                top: 15px;
+                width: 100px;
+            }
+
+            #time {
+                font-size: 18px;
+                line-height: 50px;
+            }
+
+            #searchContainer {
+                top: 150px;
+            }
+
+            #searchBox {
+                width: 200px;
+            }
+
+            #searchInput {
+                font-size: 12px;
+            }
         }
     </style>
     <script>
